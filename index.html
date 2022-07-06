@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css styles -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&family=Raleway&family=Source+Sans+Pro:wght@300&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="navigation">
+                <section class="logo">
+                    <a href="#">
+                        <img height="70px" src="./logo.png" alt="logo">
+                    </a>
+                </section>
+
+                <section class="toggle">
+                    <div class="customer">
+                        <ul>
+                            <li>
+                                <a class='num' href=""><i class="phone fa-solid fa-phone-volume"></i> <b>661-878-9100</b></a>
+                            </li>
+
+                            <li> <a href="">
+                                    <button class="btn">
+                                        CONTACT US<i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+
+                                </a></li>
+
+                            <li>
+                                <a href=""><i class="fa-solid fa-calendar"></i> <b>Schedule Appointment</b> </a>
+                            </li>
+
+                            <li>
+                                <a href=""><i class="fa-solid fa-message"></i> <b>Send us a message</b></a>
+                            </li>
+                        </ul>
+                        <div class="search">
+
+                            <a href="javascript:void(0);" onclick="toggleSearch()"> <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+
+                            <a href="javascript:void(0);" class="icon navigation-menus" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="#home" class="active">WELLNESS <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#recovery">RECOVERY <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#shop">SHOP <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#about-us">ABOUT US <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#location">LOCATION</a>
+                        <a href="">
+                            <button class="btn">
+                                CONTACT US
+                            </button>
+                        </a>
+                    </div>
+                    <div class="mobile">
+                        <a class="calendar" href="javascript:void(0);">
+                            <i class="fa-solid fa-calendar"><span class="icon-text">Book Now</span></i>
+                        </a>
+                        <a class="message-toggle" href="javascript:void(0);">
+                            <i class="fa-solid fa-message"><span class="icon-text">Message Us</span></i>
+                        </a>
+                        <a href="javascript:void(0);" class="icon menus" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+
+            </div>
+            <section class="second-header-navigation">
+                <li>
+                    <a href=""><i class="fa-solid fa-calendar"></i> <b>Schedule Appointment</b> </a>
+                </li>
+
+                <span class="right-line"></span>
+
+                <li>
+                    <a href=""><i class="fa-solid fa-message"></i> <b>Send us a message</b></a>
+                </li>
+            </section>
+            </section>
+        </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Header Stage -->
+        <div class="container">
+            <section class="bodyhead">
+                <section class="musthead">
+                    <img src="./banner.jpg" alt="banner">
+                </section>
+                <div class="banner-image-overlay"></div>
+                <section class="image-content">
+                    <h3>We ARE A MEDICAL WELLNESS & RECOVERY CENTER IN CALIFORNIA </h3>
+                    <h1>Wellness is a journey, let's go <span> together <img src="./line.png" alt=""></span></h1>
+                    <a href="">
+                        <button class="btn image-button">
+                            BOOK AN APPOINTMENT TODAY <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </a>
+                </section>
+            </section>
+
+            <section class="home-card-wrapper container ">
+                <div class="home-content row">
+                    <div class="col-sm-4 col-md-4">
+                        <a href="">
+                            <div class="home-card">
+                                <img src="./medical-kit-3.svg" alt="">
+                                <h3>Wellness</h3>
+                                <p>We offer top-quality medical wellness and cosmetic services in an environment unlike any
+                                    other in California.</p>
+                                <span class="hyperlink">Learn more <i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <a href="">
+                            <div class="home-card">
+                                <img src="./heart-rate.svg" alt="">
+                                <h3>Recovery</h3>
+                                <p>If you want comprehensive outpatient addiction treatment in a comfortable nonjudgemental
+                                    setting we are the solution for you.</p>
+                                <span class="hyperlink">Learn more <i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-4 col-md-4">
+                        <a href="">
+                            <div class="home-card">
+                                <img src="./shopping-cart.svg" alt="">
+                                <h3>Wellness</h3>
+                                <p>Our monthly specials and services are now available to pre-purchase and order at any time.</p>
+                                <span class="hyperlink">Visit Our Shop <i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Home Icons -->
+
+        <section class="home-explore">
+            <div class="container">
+                <div class="explore-header">
+                    <h2>Explore Our Header Services</h2>
+                </div>
+                <div class="home-icons">
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./body-scale.svg" alt="body-scale">
+                        </div>
+                        <h2>Weight Loss</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./slim-body.svg" alt="body-scale">
+                        </div>
+                        <h2>Body Shaping</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./syringe.svg" alt="body-scale">
+                        </div>
+                        <h2>Medical Aesthetic</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./honey.svg" alt="body-scale">
+                        </div>
+                        <h2>Hormones</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./Group-18932.svg" alt="body-scale">
+                        </div>
+                        <h2>For Men</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./iv-bag.svg" alt="body-scale">
+                        </div>
+                        <h2>Iv Drip Therapy</h2>
+                    </div>
+
+                </div>
+                <button class="btn">See All Wellness Services </button>
+
+                <div class="explore-header">
+                    <h2>Explore Our Recovery Services</h2>
+                </div>
+
+                <div class="home-icons">
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./recover images/stethoscope-1.svg" alt="body-scale">
+                        </div>
+                        <h2>treatment</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./recover images//health.svg" alt="body-scale">
+                        </div>
+                        <h2>Programs</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./recover images/medicine-2.svg" alt="body-scale">
+                        </div>
+                        <h2>Medication</h2>
+                    </div>
+
+                    <div class="body-scale">
+                        <div class="home-explorer-svg">
+                            <img src="./recover images/medical-report.svg" alt="body-scale">
+                        </div>
+                        <h2>Addiction Test </h2>
+                    </div>
+                </div>
+                <button class="btn">See All Recovery Services </button>
+            </div>
+        </section>
+        <section class="home-testimonial">
+            <div class="container">
+                <h5>OUR TESTIMONIALS</h5>
+                <h2>WHAT OUR PATIENTS SAY</h2>
+                <!-- Testimonials -->
+
+                <div class="row">
+                    <div class="columns col-md-12">
+                        <button class="slick-prev slick-arrow">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <div class="testimonial ">
+                            <div class="home-testimonial-box">
+
+                                <p>I am Elizabeth's husband of 44 years. It is because of Dr. Trobisch's amazing transformation
+                                    of her health, energy and outlook on life that I decided he could help me too. Since
+                                    beginning bioidentical hormones, MY energy level, sleep habits and overall health has
+                                    been amazing**. His care and dedication...</p>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="./client-3.png" alt="">
+                                    </div>
+                                    <div class="client-name">
+                                        <h4>Gene B.</h4>
+                                        <div class="stars">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="home-testimonial-box">
+
+                                <p>I am Elizabeth's husband of 44 years. It is because of Dr. Trobisch's amazing transformation
+                                    of her health, energy and outlook on life that I decided he could help me too. Since
+                                    beginning bioidentical hormones, MY energy level, sleep habits and overall health has
+                                    been amazing**. His care and dedication...</p>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="./client-3.png" alt="">
+                                    </div>
+                                    <div class="client-name">
+                                        <h4>Gene B.</h4>
+                                        <div class="stars">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial ">
+                            <div class="home-testimonial-box">
+
+                                <p>I am Elizabeth's husband of 44 years. It is because of Dr. Trobisch's amazing transformation
+                                    of her health, energy and outlook on life that I decided he could help me too. Since
+                                    beginning bioidentical hormones, MY energy level, sleep habits and overall health has
+                                    been amazing**. His care and dedication...</p>
+                                <div class="client-info">
+                                    <div class="client-image">
+                                        <img src="./client-3.png" alt="">
+                                    </div>
+                                    <div class="client-name">
+                                        <h4>Gene B.</h4>
+                                        <div class="stars">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slick-next slick-arrow">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-buttons">
+            <!-- Prev and Next button of Testimonials  -->
+            <div class="col-md-12">
+                <div class="google-content">
+                    <p>Based on
+                        <a href="#">Google Reviews</a>
+                        and
+                        <a href="#">Yelp</a>
+                    </p>
+                </div>
+                <div class="js-testimonials-arrow hidden-sm-up">
+                    <button class="slick-prev slick-arrow">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="slick-next slick-arrow">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-rating">
+            <div class="curved-blue">
+                <img src="./curved-blue-1024x68.png" alt="">
+            </div>
+            <div class="container">
+                <div class="rating-list">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <div class="rate-content">
+                                <h2>10+</h2>
+                                <h5>Years In Business</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="rate-content">
+                                <h2>10,000+</h2>
+                                <h5>Customers In Our Database</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="rate-content">
+                                <h2>4.9</h2>
+                                <h5>Stars from Happy Customers</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-video-wrapper">
+            <div class="container">
+                <div class="home-video-box">
+                    <a href="https://youtu.be/NiSPfBjvE3s">
+                        <div class="video-box">
+                            <img src="./Elizabeth-Gene-Story-Thumb.jpg" alt="">
+                            <div class="video-overlay">
+                                <div class="video-play"><i class="fa-solid fa-circle-play"></i></div>
+                            </div>
+                        </div>
+
+
+                    </a>
+                    <div class="home-customer-item">
+                        <h5>Watch Some Of Our Video</h5>
+                        <h2>Bio-Identical Hormone Replacement</h2>
+                        <p>Watch Elizabeth and Gene telling their story about life before hormones replacement and how everything
+                            changed after starting bioidentical hormones at Synergy Wellness Center </p>
+
+                        <div class="button-wrapper">
+                            <a href="https://youtu.be/NiSPfBjvE3s" class="btn btn-primary ">
+                                Watch Video <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="js-testimonials-arrow hidden-sm-up">
+                    <button class="slick-prev slick-arrow">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="slick-next slick-arrow">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blogs">
+            <div class="select">
+                <h2>BLOG</h2>
+                <!-- <label>Select Category</label> -->
+                <div class="desktop-category">
+                    <ul>
+                        <li><a href="">
+                                WEIGHT LOSS
+                            </a></li>
+                        <li><a href="">
+                                BODY SHAPING
+                            </a></li>
+                        <li><a href="">
+                                HORMONES
+                            </a></li>
+                        <li><a href="">
+                                EDICAL AESTHETICS
+                            </a></li>
+                        <li><a href="">
+                                RECOVERY
+                            </a></li>
+                        <li><a href="">
+                                EVENT AND SPECIALS
+                            </a></li>
+                    </ul>
+                </div>
+                <select name="categories" aria-placeholder="Select Category">
+                    <option value="">Select Category</option>
+                    <option value="">WEIGHT LOSS</option>
+                    <option value="">BODY SHAPING</option>
+                    <option value="">HORMONES</option>
+                    <option value="">MEDICAL AESTHETICS</option>
+                    <option value="">RECOVERY</option>
+                    <option value="">EVENT AND SPECIALS</option>
+                </select>
+            </div>
+
+            <div class="tab-contents">
+                <div class="container">
+                    <div class="row">
+                        <div class="blog-contents row">
+                            <div class="col-sm-4 col-md-4">
+                                <a href="">
+                                    <div class="blog-card">
+                                        <div class="blog-image">
+                                            <img src="./iStock-825175942-1536x971.jpg" alt="">
+                                        </div>
+                                        <div class="blog-content">
+
+                                            <h3>Swelling After Liposuction: How Long and How to Reduce It</h3>
+                                            <p>We offer top-quality medical wellness and cosmetic services in an environment
+                                                unlike any other in California.</p>
+                                            <span class="hyperlink">READ MORE <i class="fa-solid fa-angle-right"></i></span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a href="">
+                                    <div class="blog-card">
+                                        <div class="blog-image">
+                                            <img src="./01-Liposuction-the-Smart-Way-How-to-Reduce-Pain-and-Swelling-for-a-Better-Experience-768x312.jpg" alt="">
+                                        </div>
+                                        <div class="blog-content">
+
+                                            <h3>Liposuction the Smart Way: How to Reduce Pain and Swelling for a Better Experience
+                                            </h3>
+                                            <p>We offer top-quality medical wellness and cosmetic services in an environment
+                                                unlike any other in California.</p>
+                                            <span class="hyperlink">READ MORE <i class="fa-solid fa-angle-right"></i></span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <a href="">
+                                    <div class="blog-card">
+                                        <div class="blog-image">
+                                            <img src="./Hormone-Optimization-liposuction-7.jpg" alt="">
+                                        </div>
+                                        <div class="blog-content">
+
+                                            <h3>What Results Can You Expect From Liposuction?</h3>
+                                            <p>We offer top-quality medical wellness and cosmetic services in an environment
+                                                unlike any other in California.</p>
+                                            <span class="hyperlink">READ MORE <i class="fa-solid fa-angle-right"></i></span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-button">
+                <a class="btn btn-primary"> Visit Our Blog</a>
+            </div>
+        </section>
+
+        <section class="home-location">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-7">
+                        <h5>OUR LOCATIONS</h5>
+                        <h2>Medical Wellness & Recovery Center in California</h2>
+                        <p>For access to our medical aesthetic clinic and medical spa, choose the Synergy Wellness tab. Our
+                            team specializes in medical weight loss, cosmetic and age management services including minimal
+                            invasive liposuction and hormone optimization, medical aesthetics and body shaping for both men
+                            and women in Bakersfield, California. Synergy Wellness is well-established and fully equipped
+                            to perform weight loss and advanced aesthetic treatments using fillers, botox, lasers and skin
+                            resurfacing.
+                        </p>
+                        <p>Our Bakersfield health and recovery center offers medication-assisted addiction treatment by combining
+                            medications with psychosocial counseling to treat the underlying cause of addiction. Our addiction
+                            treatment program uses various proven methods to get better outcomes and is customized for the
+                            individual patient and the drugs being used. For recovery services, head on over to our Synergy
+                            Recovery tab to achieve health and happiness free from addiction.</p>
+
+                        <div class="button-wrapper">
+                            <a href="https://youtu.be/NiSPfBjvE3s" class="btn btn-primary ">
+                                Watch Video <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-offset-1 col-md-4">
+                        <div class="location-content">
+                            <div class="accordion__panel__toggle">
+                                <h3>Bakersfield</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <div class="accordion__panel__toggle">
+                                <h3>Clovis</h3>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="home-synergy-wrapper">
+            <div class="home-synergy-image">
+                <img height="450px" src="./SynergyPics.png" alt="">
+            </div>
+            <div class="home-synergy-wrapper-right">
+                <div class="home-synergy-content">
+                    <h2>Seek Professional Help at Synergy Wellness</h2>
+                    <p>If you need wellness or recovery services, it’s important to seek help from qualified and experienced
+                        professionals who have the skills to fully support you. Seeking recovery and vibrant health is a
+                        journey, and the right support can be there with you every step of the way. Qualified professionals
+                        offer safe and effective options. Synergy Wellness in Bakersfield & Fresno takes an integrated approach.
+                        The team at Synergy Wellness has extensive experience helping people and our wide range of services
+                        includes physician-supervised weight loss, medical aesthetics, IV therapy, body shaping, hormone
+                        optimization and more. Synergy Recovery Services provides addiction care and recovery.</p>
+                    <p>Synergy Wellness offers cutting-edge technology in Bakersfield & Fresno, and we’re always expanding
+                        our understanding of the most modern technology. We even partner with an aesthetic center in Germany
+                        so we can bring the most innovative medical advancements for you. <a href="">Contact us to find out
+                            more
+                        </a> &nbsp; or to schedule a consultation.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="home-cta-wrapper">
+            <div class="home-cta-background">
+                <img src="./bg-green-1536x946.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="home-cta-content">
+                            <h2>READY TO GET STARTED</h2>
+                            <p>Get in touch with us today with any questions you may have, to book an appointment or view
+                                our growing wellness store</p>
+                            <div href="#" class="btn-bended-wrapper">
+                                <a href="" class="btn btn-primary">
+                                    Contact Us <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                                <a href="" class="btn btn-secondary">
+                                    Shop Now <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-sm-6 col-md-6 footer-left-content">
+                    <div class="footer-right">
+                        <div class="footer-logo">
+                            <a href="#"> <h2>
+                                    <span class="synergy-text">synergy</span> | <span>wellness</span>
+                                </h2> </a>
+                        </div>
+                        <div class="footer-mobile-section hidden-sm-up">
+                            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                            <p>Sign up for insights directly to your inbox!</p>
+                            <form action="">
+                                <div class="contact-form">
+                                    <div class="footer-email">
+                                        <input type="text" id="email" placeholder="Email Address" name>
+                                        <div class="form-submit">
+                                            <label for="email"><i class="fa-solid fa-arrow-right"></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="footer-top-right">
+                            <div class="social-icon">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="image-cert">
+                            <img class="attachment-full size-full entered lazyloaded imgone" height="60" src="./cert-legit.png" alt="">
+                            <img class="attachment-full size-full entered lazyloaded imgtwo" width="73" height="59" src="./cert_goldseal.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer-site-information">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="contact-left">
+                                    <li class="address">
+                                        <h5> <i class="fa-solid fa-location-dot"></i>Headquarters</h5>
+                                        <p>7910 Downing Ave, Suite 100 Bakersfield, CA 93308</p>
+                                        <a href="">Get Directions</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ul class="contact-info">
+                                    <li>
+                                        <span class="icon-phone"><i class="phone fa-solid fa-phone-volume"></i></span>
+                                        <a href=""><p>661-878-9100</p></a>
+                                    </li>
+
+                                    <li>
+                                        <span class="icon-fax"><i class="fa-solid fa-fax"></i></span>
+                                        <a href=""><p>661-878-9100</p></a>
+                                    </li>
+
+                                    <li>
+                                        <span class="icon-hours"><i class="fa-solid fa-clock-nine"></i></span>
+                                        <p>Mon-Thu: 8AM – 6PM Fri: 8AM – 5PM</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-pull-8 col-md-3 footer-right-content-col">
+                                <div class="quick-menu">
+                                    <h6>QUICK LINKS</h6>
+                                </div>
+                                <nav class="footer-navigation">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="">Recovery</a>
+                                        </li>
+                                        <li>
+                                            <a href="">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Wellness</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Location</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="copyright">
+                            <ul class="clearfix">
+                                <li><a href="">Sitemap |</a></li>
+                                <li><a href="">Privacy Policy |</a></li>
+                                <li>Copyright © 2022. Synergy Wellness Group, Inc. All Rights Reserved</li>
+                                <li>Registered in the U.S. Patent and Trademark Office</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="back-to-top">BACK TO TOP <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                x.style.width = "40%";
+            } else {
+                x.className = "topnav";
+                x.style.width = "0%";
+            }
+        }
+
+        function toggleSearch() {
+            var x = document.getElementById("search")
+            if (x.className === "searchbar") {
+                x.style.width = "50%";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
